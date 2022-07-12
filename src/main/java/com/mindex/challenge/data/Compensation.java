@@ -1,11 +1,13 @@
 package com.mindex.challenge.data;
 
+import org.springframework.data.annotation.Id;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.mindex.challenge.data.Employee;
 import java.util.Date;
 
 public class Compensation {
 
+    @Id
     private Employee employee;
     private int salary;
 
